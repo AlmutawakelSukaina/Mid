@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_Add"
+        android:icon="@drawable/ic_baseline_add_to_photos_24"
+        android:title="Add"/>
+    <item
+        android:id="@+id/navigation_do"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="To Do"/>
+
+    <item
+        android:id="@+id/navigation_prog"
+        android:icon="@drawable/ic_baseline_low_priority_24"
+        android:title="In Progress"/>
+
+    <item
+        android:id="@+id/navigation_done"
+        android:icon="@drawable/ic_baseline_done_all_24"
+        android:title="Done"/>
+
+</menu>

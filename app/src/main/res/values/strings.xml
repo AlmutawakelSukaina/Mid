@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MidExam</string>
+    <string name="Add">Add</string>
+    <string name="To_Do">To Do</string>
+    <string name="Progress">In Progress</string>
+    <string name="Done">Done</string>
+</resources>
