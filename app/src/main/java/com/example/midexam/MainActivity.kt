@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.navigation_Add-> {
                     title=resources.getString(R.string.Add)
-                    loadFragment(TaskFragment())
+                    loadFragment(TaskFragment.newInstance())
                     return@setOnNavigationItemSelectedListener true
                 }
 
                 R.id.navigation_do-> {
                     title=resources.getString(R.string.To_Do)
-                    loadFragment(ToDoFragment())
+                    loadFragment(DoListFragment.newInstance())
                     return@setOnNavigationItemSelectedListener true
                 }
 

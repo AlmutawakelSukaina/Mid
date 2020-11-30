@@ -21,8 +21,7 @@ class TaskRepository private constructor(context: Context) {
     private val taskDao = database.taskDao()
     private val executor = Executors.newSingleThreadExecutor()
 
-    private val filesDir = context.applicationContext.filesDir
-    fun getTasks(): LiveData<List<Task>> = taskDao.getTasks()
+    fun getTasks(type:String): LiveData<List<Task>> = taskDao.getTasks(type)
     fun getTask(id: UUID): LiveData<Task?> =
         taskDao.getTask(id)
 

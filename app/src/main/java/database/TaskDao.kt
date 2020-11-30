@@ -11,9 +11,12 @@ import java.util.*
 
 @Dao
 interface TaskDao {
-    @Query("SELECT * FROM task")
+    @Query("SELECT * FROM task WHERE type=(:type)")
 
-    fun getTasks(): LiveData<List<Task>>
+    fun getTasks(type:String): LiveData<List<Task>>
+
+
+
     @Query("SELECT * FROM task WHERE id=(:id)")
     fun getTask(id: UUID): LiveData<Task?>
 

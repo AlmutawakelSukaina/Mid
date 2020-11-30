@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey
 data class Task(@PrimaryKey val id: UUID = UUID.randomUUID(),
                 var title: String = "",
                 var date: Date = Date(),
-                var details: String = "" )
+                var details: String = "",var type:String="" )
 
 {
 
